@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 // import 'package:my_flutter_app/pages/product_page.dart';
 // import 'package:my_flutter_app/pages/shopping_page.dart';
-import 'package:my_flutter_app/pages/shopping_page_2.dart';
+// import 'package:my_flutter_app/pages/shopping_page_2.dart';
+import 'package:my_flutter_app/pages/register_page.dart';
 
 void main() {
   // runApp(const MyApp());
   // runApp(ProductListApp());
   // runApp(ShoppingApp());
-  runApp(ShoppingApp2());
+  // runApp(ShoppingApp2());
+  runApp(RegisterPageApp());
 }
 
 class MyApp extends StatelessWidget {
