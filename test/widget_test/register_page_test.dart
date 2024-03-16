@@ -37,25 +37,31 @@ void main() {
     // // รอการแสดงผล Widget + รอ Animation ให้ทำงานเสร็จสิ้น
     // xxxxx____11.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // ตรวจสอบว่าได้ย้อนกลับไปหน้าลงทะเบียน , โดยการค้นหาคำว่า 'Register'
+    // // ตรวจสอบว่าได้ย้อนกลับไปหน้าลงทะเบียน , โดยการค้นหาคำว่า 'Register'
     // xxxxx____12.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // ส่งฟอร์ม
+    // // ตัวอย่างการกรอกข้อมูลที่ไม่ถูกต้อง
+    // await tester.enterText(find.byType(TextFormField).at(0), '');
+    // await tester.enterText(find.byType(TextFormField).at(1), '');
+    // await tester.enterText(find.byType(TextFormField).at(2), 'notanemail');
+    // await tester.enterText(find.byType(TextFormField).at(3), '-1');
+
+    // // ส่งฟอร์ม
     // xxxxx____13.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // รอการแสดงผล Widget + รอ Animation ให้ทำงานเสร็จสิ้น
+    // // รอการแสดงผล Widget + รอ Animation ให้ทำงานเสร็จสิ้น
     // xxxxx____14.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter your username'
+    // // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter your username'
     // xxxxx____15.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter your password'
+    // // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter your password'
     // xxxxx____16.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter a valid email'
+    // // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter a valid email'
     // xxxxx____17.จงเติมคำตอบที่ถูกต้อง_____xxxxx
 
-    // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter a valid age'
+    // // ตรวจสอบข้อความ error ที่แสดง , โดยการค้นหาคำว่า 'Please enter a valid age'
     // xxxxx____18.จงเติมคำตอบที่ถูกต้อง_____xxxxx
   });
 }
