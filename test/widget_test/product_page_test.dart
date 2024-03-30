@@ -12,11 +12,11 @@ import 'package:my_flutter_app/repositories/product_repositories.dart';
 void main() {
   group('ProductListPage Tests', () {
     // // สร้าง instance ของ MockProductRepository
-    // xxxxx____3.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    // late xxxxx____3.จงเติมคำตอบที่ถูกต้อง_____xxxxx mockProductRepository;
 
     // setUp(() {
     //   // ตั้งค่าเริ่มต้นก่อนการทดสอบแต่ละครั้ง
-    //   xxxxx____4.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   xxxxx____4.จงเติมคำตอบที่ถูกต้อง_____xxxxx = MockProductRepository();
     // });
 
     // testWidgets('Product List Page displays list of products', (WidgetTester tester) async {
@@ -35,38 +35,40 @@ void main() {
     //   await tester.pumpAndSettle();
 
     //   // ตรวจสอบผลลัพธ์ว่า MacBook ถูกแสดงผล
-    //   xxxxx____5.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   expect(find.text('xxxxx____5.จงเติมคำตอบที่ถูกต้อง_____xxxxx'), findsOneWidget);
 
     //   // ตรวจสอบผลลัพธ์ว่า iPhone ถูกแสดงผล
-    //   xxxxx____6.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   expect(find.text('iPhone'), xxxxx____6.จงเติมคำตอบที่ถูกต้อง_____xxxxx);
 
     //   // ตรวจสอบผลลัพธ์ว่า Price: $8000.0 ถูกแสดงผล
-    //   xxxxx____7.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   expect(find.text('Price: \$8000.0'), xxxxx____7.จงเติมคำตอบที่ถูกต้อง_____xxxxx);
 
     //   // ตรวจสอบผลลัพธ์ว่า Price: $7000.0 ถูกแสดงผล
-    //   expect(find.text('Price: \$7000.0'), xxxxx____8.จงเติมคำตอบที่ถูกต้อง_____xxxxx);
+    //   xxxxx____8.จงเติมคำตอบที่ถูกต้อง_____xxxxx
     // });
 
     // testWidgets('Product List Page shows error message when fetching products fails', (WidgetTester tester) async {
     //   // ตั้งค่า mock ให้ throw Exception('Failed to fetch products') , เมื่อ fetchProducts ถูกเรียก
-    //   xxxxx____9.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   when(mockProductRepository.fetchProducts()).thenAnswer(
+    //    (_) async => xxxxx____9.จงเติมคำตอบที่ถูกต้อง_____xxxxx,
+    //   );
 
     //   // สร้าง ProductListPage เพื่อนำไปแสดงผล
-    //   xxxxx____10.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   await tester.pumpWidget(MaterialApp(home: xxxxx____10.จงเติมคำตอบที่ถูกต้อง_____xxxxx(repository: mockProductRepository)));
 
     //   // รอการแสดงผล Widget + รอ Animation ให้ทำงานเสร็จสิ้น
-    //   xxxxx___11.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   await tester.xxxxx___11.จงเติมคำตอบที่ถูกต้อง_____xxxxx();
 
     //   // ตรวจสอบว่าข้อความ error ถูกแสดง
     //   expect(find.text('Error: Exception: Failed to fetch products'), xxxxx____12.จงเติมคำตอบที่ถูกต้อง_____xxxxx);
     // });
 
     // testWidgets('Product List Page displays a CircularProgressIndicator while waiting for products', (WidgetTester tester) async {
-    //   // ตั้งค่า mock ให้เป็น Future.value([]) หรือ ฟังก์ชั่นที่จะให้ข้อมูลในอนาคต , เมื่อ fetchProducts ถูกเรียก
-    //   xxxxx____13.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   // ตั้งค่า mock ให้เป็น Future.value([]) หรือ ฟังก์ชั่นที่จะให้ข้อมูลในอนาคต , เมื่อ mockProductRepository.fetchProducts() ถูกเรียก
+    //   when(xxxxx____13.จงเติมคำตอบที่ถูกต้อง_____xxxxx).thenAnswer((_) => Future.value([]));
 
     //   // สร้าง ProductListPage เพื่อนำไปแสดงผล
-    //   xxxxx____14.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   await tester.pumpWidget(MaterialApp(home: xxxxx____14.จงเติมคำตอบที่ถูกต้อง_____xxxxx(repository: mockProductRepository)));
 
     //   // ตรวจสอบว่า CircularProgressIndicator ถูกแสดง
     //   expect(find.byType(CircularProgressIndicator), xxxxx____15.จงเติมคำตอบที่ถูกต้อง_____xxxxx);
@@ -74,7 +76,7 @@ void main() {
 
     // testWidgets('Product List Page displays no products when the list is empty', (WidgetTester tester) async {
     //   // ตั้งค่า mock ให้ส่งกลับ list ว่าง หรือ [] , เมื่อ fetchProducts ถูกเรียก
-    //   xxxxx____16.จงเติมคำตอบที่ถูกต้อง_____xxxxx
+    //   when(xxxxx____16.จงเติมคำตอบที่ถูกต้อง_____xxxxx).thenAnswer((_) async => []);
 
     //   // สร้าง ProductListPage เพื่อนำไปแสดงผล
     //   xxxxx____17.จงเติมคำตอบที่ถูกต้อง_____xxxxx
